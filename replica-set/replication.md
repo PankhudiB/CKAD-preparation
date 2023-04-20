@@ -28,4 +28,17 @@ so while writing the replica-set.yml
          2. To also maintain replicas of pod that were not created through this replica set 
           but still annotated under the tag
    
-      
+
+WHY DO WE NEED LABELS AND SELECTORS ?
+- replicas set is like a process that is runnning and looking over pods, 
+  - for it to know which pod to instantiate if 1 goes down - it needs selectors, and pods need labels
+
+SCALING REPLICASET 
+
+```kubectl scale --replicas=6 replicaset myapp-replicaset```
+   - but this does not modify the file
+   
+BEST COMMAND EVER:
+
+```k explain replicaset```
+
