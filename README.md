@@ -14,5 +14,4 @@
 3. `kubectl run redis --image=redis123 --dry-run=client -o yaml > file_name.yaml` -> to extract yaml out of creat new resource || existing instance
 
 
-https://kubernetes.io/docs/reference/kubectl/overview/
-https://kubernetes.io/docs/reference/kubectl/cheatsheet/
+KUBECTL CHEATSHEET : https://kubernetes.io/docs/reference/kubectl/cheatsheet/
